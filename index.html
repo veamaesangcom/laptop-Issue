@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop Expert System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Laptop Expert System</h1>
+        <p>Rule-based troubleshooting for common laptop problems</p>
+      </header>
+
+      <main class="panel">
+        <div id="questionScreen" class="screen active">
+          <div id="questionBox" class="question-box"></div>
+
+          <div class="controls">
+            <button id="backBtn" class="secondary" type="button">Back</button>
+            <button id="nextBtn" type="button">Next</button>
+          </div>
+        </div>
+        <div class="progress-wrapper" aria-label="Question progress">
+          <div id="progressBar" class="progress-bar"></div>
+          <span id="progressText" class="progress-text">0%</span>
+        </div>
+
+        <div id="resultScreen" class="screen">
+          <div class="result-card">
+            <h2>Diagnosis Result</h2>
+            <div id="diagnosis" class="diagnosis"></div>
+            <p id="explanation" class="explanation"></p>
+
+            <div class="matched-rules">
+              <h3>Matching Rules</h3>
+              <ul id="ruleList"></ul>
+            </div>
+
+            <button id="restartBtn" class="primary" type="button">Start Again</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
